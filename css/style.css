@@ -1,0 +1,145 @@
+/* barlow-semi-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-semi-condensed-v15-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-semi-condensed-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/barlow-semi-condensed-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-semi-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/barlow-semi-condensed-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+image {
+  object-fit: cover;
+  display: flex;
+}
+body {
+  margin: 0;
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed";
+  font-weight: 500;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "item1 item1 item2 item3"
+    "item4 item5 item5 item3";
+  gap: 10px;
+}
+.grid-container div {
+  border-radius: 8px;
+  flex-grow: 1;
+  /* padding: 10px; */
+}
+.large-container {
+  margin: 0 auto;
+  max-width: 476px;
+}
+
+.small-container {
+  margin: 0 auto;
+  max-width: 196px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding-bottom: 18px;
+}
+.profile-card img {
+  border-radius: 50%;
+  border-color: #a775f1;
+  border: 2px;
+}
+.profile-txt {
+  padding-left: 17px;
+}
+.profile-txt h2 {
+  padding-bottom: 4px;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+.profile-txt p {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  color: #ffffff;
+}
+.card {
+  padding: 26px 0px 19px 32px;
+}
+.txt-card h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+.txt-card p {
+  color: #cfcfcf;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  padding-top: 16px;
+}
+.item1 {
+  grid-area: item1;
+  background-color: #733fc8;
+}
+
+.item2 {
+  grid-area: item2;
+  background-color: #48556a;
+}
+
+.item3 {
+  grid-area: item3;
+  background-color: #ffffff;
+}
+.item4 {
+  grid-area: item4;
+  background-color: #ffffff;
+}
+.item5 {
+  grid-area: item5;
+  background-color: #19202d;
+}
