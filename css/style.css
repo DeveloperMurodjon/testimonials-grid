@@ -48,6 +48,7 @@ image {
   display: flex;
 }
 body {
+  padding: 10px 0;
   margin: 0;
   background-color: #ecf2f8;
   font-family: "Barlow Semi Condensed";
@@ -66,10 +67,22 @@ body {
     "item4 item5 item5 item3";
   gap: 10px;
 }
+@media (max-width: 375px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+    padding: 0 14px;
+  }
+}
 .grid-container div {
   border-radius: 8px;
   flex-grow: 1;
-  /* padding: 10px; */
+  padding: 10px;
 }
 .large-container {
   margin: 0 auto;
